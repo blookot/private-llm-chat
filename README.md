@@ -26,7 +26,7 @@ Here is an example:
 ollama pull qwen3
 ```
 
-Test your new LLM (setting the model to the model you chose of course, mistral in my example):
+Test your new LLM (setting the model to the model you chose of course, qwen3 in my example):
 ```sh
 curl http://localhost:11434/v1/chat/completions \
     -H "Content-Type: application/json" \
@@ -65,6 +65,8 @@ Then run the program:
 ```sh
 streamlit run privateChat.py
 ```
+
+Your web browser should open the Streamlit UI automatically. Otherwise, the UI URL is provided in the command output.
 
 ## Example
 
