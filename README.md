@@ -19,11 +19,11 @@ cd private-llm-chat
 ## Setup a local LLM
 
 Download & install [ollama](https://github.com/ollama/ollama) for your platform.<br/>
-Get the model you want. You can choose any of the models from [ollama library](https://ollama.com/library?sort=popular) that has the 'tools' tag. I personnaly use gwen3 but I also tested mistral which works great as well!
+Get the model(s) you want. You can choose any of the models from [ollama library](https://ollama.com/library?sort=popular) that has the 'tools' and 'thinking' tags. I personnaly tested llama3.2, qwen3, mistral... but I finally used gemma4 which is a good size/quality balance!
 
 Here is an example:
 ```sh
-ollama pull qwen3
+ollama pull gemma4
 ```
 
 Test your new LLM (setting the model to the model you chose of course, qwen3 in my example):
@@ -31,7 +31,7 @@ Test your new LLM (setting the model to the model you chose of course, qwen3 in 
 curl http://localhost:11434/v1/chat/completions \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "qwen3",
+        "model": "gemma4",
         "messages": [
             {
                 "role": "system",

@@ -7,7 +7,7 @@ st.title("🤖 Chatbot Local")
 # Select model
 selected_model = st.sidebar.selectbox(
     "Choisir le modèle",
-    ["qwen3:latest", "mistral:latest", "llama3.2:latest"],
+    ["gemma4:latest", "qwen3:latest", "mistral:latest", "llama3.2:latest"],
     index=0,
 )
 
